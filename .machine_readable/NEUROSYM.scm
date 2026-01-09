@@ -10,4 +10,9 @@
     (neural-layer
       ((embeddings . false)
        (fine-tuning . false)))
-    (integration . ())))
+    (integration
+      ((mode . "symbolic-first")
+       (approach . "Rule-based configuration with AI-assisted code generation")
+       (boundaries
+         (("symbolic" . "Configuration, state management, policy enforcement")
+          ("neural" . "Code assistance, documentation, review")))))))
