@@ -1,5 +1,6 @@
-;; SPDX-License-Identifier: MPL-2.0
-;; AGENTIC.scm - AI agent config
+;; SPDX-License-Identifier: AGPL-3.0-or-later
+;; AGENTIC.scm - AI agent config for 60-ssg
+;; See .machine_readable/AGENTIC.scm for full details
 
 (define agentic-config
   `((version . "1.0.0")
@@ -9,6 +10,12 @@
        (permissions . "read-all")))
     (patterns
       ((code-review . "thorough")
-       (refactoring . "conservative")))
+       (refactoring . "conservative")
+       (testing . "comprehensive")))
     (constraints
-      ((banned . ("typescript" "go" "python" "makefile"))))))
+      ((languages
+         (("primary" . "ALGOL 60")
+          ("config" . "Scheme")
+          ("scripts" . "POSIX Shell")
+          ("tooling" . "Just")))
+       (banned . ("typescript" "go" "python" "makefile" "kotlin" "swift"))))))

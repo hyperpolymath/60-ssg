@@ -12,5 +12,9 @@
        (refactoring . "conservative")
        (testing . "comprehensive")))
     (constraints
-      ((languages . ())
-       (banned . ("typescript" "go" "python" "makefile"))))))
+      ((languages
+         (("primary" . "ALGOL 60")
+          ("config" . "Scheme")
+          ("scripts" . "POSIX Shell")
+          ("tooling" . "Just")))
+       (banned . ("typescript" "go" "python" "makefile" "kotlin" "swift"))))))
